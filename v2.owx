@@ -1,0 +1,579 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5">
+    <Prefix name="" IRI="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="untitled-ontology-5" IRI="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#"/>
+    <Declaration>
+        <Class IRI="#Boundary_Testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Code"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Composite_Testing_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Integration_Testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Level_Based_Testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Negative_Testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parametrized_Testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Positive_Testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Simple_Testing_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#System_Testing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test_Case"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test_Case_Design"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test_Coding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test_Planning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test_Suite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Testing_Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Testing_Framework"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Testing_Process"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unit_Testing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assertEqual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assertFalse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assertRaises"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assertTrue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#asserts"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#executes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCode"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLevelBasedTesting"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTestCases"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTestingActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#includes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExecutedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#madeUpBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#produces"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasCoverage"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEndDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasName"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProcessEndDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasProcessStartDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStartDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStatus"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brakes_Testing_Activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Car_Testing_Process"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Engine_Testing_Activity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fuel_Gasket_Test_Case"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Boundary_Testing"/>
+        <Class IRI="#Unit_Testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Code"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Composite_Testing_Activity"/>
+        <Class IRI="#Testing_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Integration_Testing"/>
+        <Class IRI="#Level_Based_Testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Level_Based_Testing"/>
+        <Class IRI="#Composite_Testing_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Negative_Testing"/>
+        <Class IRI="#Unit_Testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parametrized_Testing"/>
+        <Class IRI="#Unit_Testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Positive_Testing"/>
+        <Class IRI="#Unit_Testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Simple_Testing_Activity"/>
+        <Class IRI="#Testing_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#System_Testing"/>
+        <Class IRI="#Level_Based_Testing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test_Case"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test_Case_Design"/>
+        <Class IRI="#Simple_Testing_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test_Coding"/>
+        <Class IRI="#Simple_Testing_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test_Planning"/>
+        <Class IRI="#Composite_Testing_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test_Suite"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Testing_Activity"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Testing_Framework"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Testing_Process"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unit_Testing"/>
+        <Class IRI="#Level_Based_Testing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Composite_Testing_Activity"/>
+        <Class IRI="#Simple_Testing_Activity"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Level_Based_Testing"/>
+        <Class IRI="#Test_Planning"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Negative_Testing"/>
+        <Class IRI="#Positive_Testing"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Testing_Activity"/>
+        <NamedIndividual IRI="#Brakes_Testing_Activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Testing_Process"/>
+        <NamedIndividual IRI="#Car_Testing_Process"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Testing_Activity"/>
+        <NamedIndividual IRI="#Engine_Testing_Activity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Test_Case"/>
+        <NamedIndividual IRI="#Fuel_Gasket_Test_Case"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTestingActivity"/>
+        <NamedIndividual IRI="#Car_Testing_Process"/>
+        <NamedIndividual IRI="#Brakes_Testing_Activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasTestingActivity"/>
+        <NamedIndividual IRI="#Car_Testing_Process"/>
+        <NamedIndividual IRI="#Engine_Testing_Activity"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#Brakes_Testing_Activity"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-12-05T00:00:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#Brakes_Testing_Activity"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-10-01T00:00:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessEndDate"/>
+        <NamedIndividual IRI="#Car_Testing_Process"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-12-31T00:00:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasProcessStartDate"/>
+        <NamedIndividual IRI="#Car_Testing_Process"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-01-01T00:00:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasEndDate"/>
+        <NamedIndividual IRI="#Engine_Testing_Activity"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-10-01T00:00:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStartDate"/>
+        <NamedIndividual IRI="#Engine_Testing_Activity"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-09-01T00:00:00Z</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCoverage"/>
+        <NamedIndividual IRI="#Fuel_Gasket_Test_Case"/>
+        <Literal>Input</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasID"/>
+        <NamedIndividual IRI="#Fuel_Gasket_Test_Case"/>
+        <Literal>FG-001</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasStatus"/>
+        <NamedIndividual IRI="#Fuel_Gasket_Test_Case"/>
+        <Literal>Pendidng</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#assertEqual"/>
+        <ObjectProperty IRI="#asserts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#assertFalse"/>
+        <ObjectProperty IRI="#asserts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#assertRaises"/>
+        <ObjectProperty IRI="#asserts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#assertTrue"/>
+        <ObjectProperty IRI="#asserts"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCode"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLevelBasedTesting"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasTestingActivity"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#executes"/>
+        <ObjectProperty IRI="#isExecutedBy"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assertEqual"/>
+        <Class IRI="#Testing_Framework"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assertFalse"/>
+        <Class IRI="#Testing_Framework"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assertRaises"/>
+        <Class IRI="#Testing_Framework"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assertTrue"/>
+        <Class IRI="#Testing_Framework"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#asserts"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#assertRaises"/>
+            <Class IRI="#Testing_Framework"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#executes"/>
+        <Class IRI="#Testing_Framework"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCode"/>
+        <Class IRI="#Code"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLevelBasedTesting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasLevelBasedTesting"/>
+            <Class IRI="#Simple_Testing_Activity"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTestCases"/>
+        <Class IRI="#Test_Suite"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTestingActivity"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasTestingActivity"/>
+            <Class IRI="#Testing_Process"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#includes"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#produces"/>
+            <Class IRI="#Test_Case"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#madeUpBy"/>
+        <Class IRI="#Integration_Testing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#madeUpBy"/>
+        <Class IRI="#System_Testing"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#produces"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#produces"/>
+            <Class IRI="#Test_Case_Design"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assertEqual"/>
+        <Class IRI="#Test_Case"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assertFalse"/>
+        <Class IRI="#Test_Case"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assertRaises"/>
+        <Class IRI="#Test_Case"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assertTrue"/>
+        <Class IRI="#Test_Case"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#asserts"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTestCases"/>
+            <Class IRI="#Test_Case"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#executes"/>
+        <Class IRI="#Test_Suite"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCode"/>
+        <Class IRI="#Test_Coding"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLevelBasedTesting"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasTestingActivity"/>
+            <Class IRI="#Level_Based_Testing"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTestCases"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#hasTestCases"/>
+            <Class IRI="#Test_Case"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTestingActivity"/>
+        <ObjectMinCardinality cardinality="2">
+            <ObjectProperty IRI="#hasTestingActivity"/>
+            <Class IRI="#Testing_Activity"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#includes"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#madeUpBy"/>
+            <Class IRI="#Level_Based_Testing"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#madeUpBy"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#madeUpBy"/>
+            <Class IRI="#Unit_Testing"/>
+        </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#produces"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#madeUpBy"/>
+            <Class IRI="#Unit_Testing"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasCoverage"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasEndDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasID"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasName"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasStartDate"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasStatus"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasCoverage"/>
+        <Class IRI="#Test_Case"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEndDate"/>
+        <Class IRI="#Testing_Activity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasID"/>
+        <Class IRI="#Test_Case"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasName"/>
+        <Class IRI="#Test_Case"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasProcessEndDate"/>
+        <Class IRI="#Testing_Process"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasProcessStartDate"/>
+        <Class IRI="#Testing_Process"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStartDate"/>
+        <Class IRI="#Testing_Activity"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStatus"/>
+        <Class IRI="#Test_Case"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasCoverage"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEndDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasID"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasName"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasProcessEndDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasProcessStartDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStartDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStatus"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

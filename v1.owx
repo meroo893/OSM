@@ -1,0 +1,329 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/mert_kamber/ontologies/2024/10/unit_testing"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/mert_kamber/ontologies/2024/10/unit_testing">
+    <Prefix name="" IRI="http://www.semanticweb.org/mert_kamber/ontologies/2024/10/unit_testing/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Boundary_Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CSharp_TF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#JS_TF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Java_TF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Negative_Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parametrized_Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Positive_Test"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Python_TF"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test_Case"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test_Suite"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Testing_Framework"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Unit_Test"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assert"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assertEqual"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assertFalse"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assertRaises"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#assertTrue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#executes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isExecutedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#JUnit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MSTest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NUnit"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TestNG"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#just_outside_test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#lower_bound_test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#nose2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#pytest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#transition_points"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#unittest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#upper_bound_test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#xUnit"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Boundary_Test"/>
+        <Class IRI="#Unit_Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CSharp_TF"/>
+        <Class IRI="#Testing_Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#JS_TF"/>
+        <Class IRI="#Testing_Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Java_TF"/>
+        <Class IRI="#Testing_Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Negative_Test"/>
+        <Class IRI="#Unit_Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parametrized_Test"/>
+        <Class IRI="#Unit_Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Positive_Test"/>
+        <Class IRI="#Unit_Test"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Python_TF"/>
+        <Class IRI="#Testing_Framework"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test_Case"/>
+        <Class IRI="#Test_Suite"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test_Suite"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Testing_Framework"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Unit_Test"/>
+        <Class IRI="#Test_Case"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#CSharp_TF"/>
+        <Class IRI="#JS_TF"/>
+        <Class IRI="#Java_TF"/>
+        <Class IRI="#Python_TF"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Negative_Test"/>
+        <Class IRI="#Positive_Test"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Test_Suite"/>
+        <Class IRI="#Testing_Framework"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Java_TF"/>
+        <NamedIndividual IRI="#JUnit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CSharp_TF"/>
+        <NamedIndividual IRI="#MSTest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CSharp_TF"/>
+        <NamedIndividual IRI="#NUnit"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Java_TF"/>
+        <NamedIndividual IRI="#TestNG"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Boundary_Test"/>
+        <NamedIndividual IRI="#just_outside_test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Negative_Test"/>
+        <NamedIndividual IRI="#just_outside_test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Boundary_Test"/>
+        <NamedIndividual IRI="#lower_bound_test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Python_TF"/>
+        <NamedIndividual IRI="#nose2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Python_TF"/>
+        <NamedIndividual IRI="#pytest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Boundary_Test"/>
+        <NamedIndividual IRI="#transition_points"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Positive_Test"/>
+        <NamedIndividual IRI="#transition_points"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Python_TF"/>
+        <NamedIndividual IRI="#unittest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Boundary_Test"/>
+        <NamedIndividual IRI="#upper_bound_test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CSharp_TF"/>
+        <NamedIndividual IRI="#xUnit"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#assert"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#assertEqual"/>
+        <ObjectProperty IRI="#assert"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#assertFalse"/>
+        <ObjectProperty IRI="#assert"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#assertRaises"/>
+        <ObjectProperty IRI="#assert"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#assertTrue"/>
+        <ObjectProperty IRI="#assert"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#executes"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isExecutedBy"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#executes"/>
+        <ObjectProperty IRI="#isExecutedBy"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assert"/>
+        <Class IRI="#Testing_Framework"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assertEqual"/>
+        <Class IRI="#Testing_Framework"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assertFalse"/>
+        <Class IRI="#Testing_Framework"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assertRaises"/>
+        <Class IRI="#Testing_Framework"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#assertTrue"/>
+        <Class IRI="#Testing_Framework"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#executes"/>
+        <Class IRI="#Testing_Framework"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isExecutedBy"/>
+        <Class IRI="#Test_Suite"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assert"/>
+        <Class IRI="#Test_Case"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assertEqual"/>
+        <Class IRI="#Test_Case"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assertFalse"/>
+        <Class IRI="#Test_Case"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assertRaises"/>
+        <Class IRI="#Test_Case"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#assertTrue"/>
+        <Class IRI="#Test_Case"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#executes"/>
+        <Class IRI="#Test_Suite"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isExecutedBy"/>
+        <Class IRI="#Testing_Framework"/>
+    </ObjectPropertyRange>
+    <DisjointObjectProperties>
+        <ObjectProperty IRI="#assertEqual"/>
+        <ObjectProperty IRI="#assertFalse"/>
+        <ObjectProperty IRI="#assertRaises"/>
+        <ObjectProperty IRI="#assertTrue"/>
+    </DisjointObjectProperties>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

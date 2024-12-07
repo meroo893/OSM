@@ -1,0 +1,565 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5/"
+     xml:base="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#assertEqual -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#assertEqual">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#asserts"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#assertRaises"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Framework"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasTestCases"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#assertFalse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#assertFalse">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#asserts"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#assertRaises"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Framework"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasTestCases"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#assertRaises -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#assertRaises">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#asserts"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#assertRaises"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Framework"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasTestCases"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#assertTrue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#assertTrue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#asserts"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#assertRaises"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Framework"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasTestCases"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#asserts -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#asserts">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#assertRaises"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Framework"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasTestCases"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#executes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#executes">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#isExecutedBy"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Framework"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Suite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasCode -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasCode">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Code"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Coding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasLevelBasedTesting -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasLevelBasedTesting">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasLevelBasedTesting"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Simple_Testing_Activity"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasTestingActivity"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Level_Based_Testing"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasTestCases -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasTestCases">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Suite"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasTestCases"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasTestingActivity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasTestingActivity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasTestingActivity"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Process"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasTestingActivity"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Activity"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#includes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#includes">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#produces"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#madeUpBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Level_Based_Testing"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#isExecutedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#isExecutedBy"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#madeUpBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#madeUpBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Integration_Testing"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#System_Testing"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#madeUpBy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Unit_Testing"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#produces -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#produces">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#produces"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case_Design"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#madeUpBy"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Unit_Testing"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasCoverage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasCoverage">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasEndDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasEndDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasID">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasStartDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasStartDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Activity"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Process"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasStatus -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#hasStatus">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Boundary_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Boundary_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Unit_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Code -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Code">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Composite_Testing_Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Composite_Testing_Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Activity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Simple_Testing_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Integration_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Integration_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Level_Based_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Level_Based_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Level_Based_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Composite_Testing_Activity"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Planning"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Negative_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Negative_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Unit_Testing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Positive_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Parametrized_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Parametrized_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Unit_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Positive_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Positive_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Unit_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Simple_Testing_Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Simple_Testing_Activity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#System_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#System_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Level_Based_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Suite"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case_Design -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case_Design">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Simple_Testing_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Coding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Coding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Simple_Testing_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Planning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Planning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Composite_Testing_Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Suite -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Suite">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Activity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Activity">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Framework -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Framework">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Process -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Process">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Unit_Testing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Unit_Testing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Level_Based_Testing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Brakes_Testing_Activity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Brakes_Testing_Activity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Activity"/>
+        <untitled-ontology-5:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-12-05T00:00:00Z</untitled-ontology-5:hasEndDate>
+        <untitled-ontology-5:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-10-01T00:00:00Z</untitled-ontology-5:hasStartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Car_Testing_Process -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Car_Testing_Process">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Process"/>
+        <untitled-ontology-5:hasTestingActivity rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Brakes_Testing_Activity"/>
+        <untitled-ontology-5:hasTestingActivity rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Engine_Testing_Activity"/>
+        <untitled-ontology-5:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-12-31T00:00:00Z</untitled-ontology-5:hasEndDate>
+        <untitled-ontology-5:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-01-01T00:00:00Z</untitled-ontology-5:hasStartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Engine_Testing_Activity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Engine_Testing_Activity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Testing_Activity"/>
+        <untitled-ontology-5:hasEndDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-10-01T00:00:00Z</untitled-ontology-5:hasEndDate>
+        <untitled-ontology-5:hasStartDate rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2024-09-01T00:00:00Z</untitled-ontology-5:hasStartDate>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Fuel_Gasket_Test_Case -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Fuel_Gasket_Test_Case">
+        <rdf:type rdf:resource="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#Test_Case"/>
+        <untitled-ontology-5:hasCoverage>Input</untitled-ontology-5:hasCoverage>
+        <untitled-ontology-5:hasID>FG-001</untitled-ontology-5:hasID>
+        <untitled-ontology-5:hasStatus>Pendidng</untitled-ontology-5:hasStatus>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
