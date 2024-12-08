@@ -167,6 +167,9 @@
         <NamedIndividual IRI="#Fuel_Gasket_Test_Case"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Injector_Test_Case"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Just_Outside_Test"/>
     </Declaration>
     <Declaration>
@@ -293,6 +296,10 @@
         <NamedIndividual IRI="#Fuel_Gasket_Test_Case"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#Test_Case"/>
+        <NamedIndividual IRI="#Injector_Test_Case"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Boundary_Testing"/>
         <NamedIndividual IRI="#Just_Outside_Test"/>
     </ClassAssertion>
@@ -398,6 +405,21 @@
         <DataProperty IRI="#hasStatus"/>
         <NamedIndividual IRI="#Fuel_Gasket_Test_Case"/>
         <Literal>Pending</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCoverage"/>
+        <NamedIndividual IRI="#Injector_Test_Case"/>
+        <Literal>Active</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasCoverage"/>
+        <NamedIndividual IRI="#Injector_Test_Case"/>
+        <Literal>Output</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasID"/>
+        <NamedIndividual IRI="#Injector_Test_Case"/>
+        <Literal>FI-002</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#isInBound"/>
