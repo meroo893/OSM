@@ -14,10 +14,10 @@
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
     <Prefix name="untitled-ontology-5" IRI="http://www.semanticweb.org/mert_kamber/ontologies/2024/11/untitled-ontology-5#"/>
     <Declaration>
-        <Class IRI="#Boundary_Testing"/>
+        <Class IRI="#Bound"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Code"/>
+        <Class IRI="#Boundary_Testing"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Composite_Testing_Activity"/>
@@ -48,6 +48,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Test_Case_Design"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Test_Code"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Test_Coding"/>
@@ -89,6 +92,9 @@
         <ObjectProperty IRI="#executes"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#hasBound"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#hasCode"/>
     </Declaration>
     <Declaration>
@@ -99,6 +105,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasTestingActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#implements"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#includes"/>
@@ -137,6 +146,15 @@
         <DataProperty IRI="#hasStatus"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isBoundType"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isInBound"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Brakes_Testing_Activity"/>
     </Declaration>
     <Declaration>
@@ -148,13 +166,31 @@
     <Declaration>
         <NamedIndividual IRI="#Fuel_Gasket_Test_Case"/>
     </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Just_Outside_Test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Just_Outside_Test2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lower_Bound"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lower_Bound_Test"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Upper_Bound"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Upper_Bound_Test"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Bound"/>
+        <Class abbreviatedIRI="owl:Thing"/>
+    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Boundary_Testing"/>
         <Class IRI="#Unit_Testing"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Code"/>
-        <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Composite_Testing_Activity"/>
@@ -195,6 +231,10 @@
     <SubClassOf>
         <Class IRI="#Test_Case_Design"/>
         <Class IRI="#Simple_Testing_Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Test_Code"/>
+        <Class abbreviatedIRI="owl:Thing"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Test_Coding"/>
@@ -252,6 +292,38 @@
         <Class IRI="#Test_Case"/>
         <NamedIndividual IRI="#Fuel_Gasket_Test_Case"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Boundary_Testing"/>
+        <NamedIndividual IRI="#Just_Outside_Test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Boundary_Testing"/>
+        <NamedIndividual IRI="#Just_Outside_Test2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bound"/>
+        <NamedIndividual IRI="#Lower_Bound"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Boundary_Testing"/>
+        <NamedIndividual IRI="#Lower_Bound_Test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Positive_Testing"/>
+        <NamedIndividual IRI="#Lower_Bound_Test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bound"/>
+        <NamedIndividual IRI="#Upper_Bound"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Boundary_Testing"/>
+        <NamedIndividual IRI="#Upper_Bound_Test"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Positive_Testing"/>
+        <NamedIndividual IRI="#Upper_Bound_Test"/>
+    </ClassAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty IRI="#hasTestingActivity"/>
         <NamedIndividual IRI="#Car_Testing_Process"/>
@@ -261,6 +333,26 @@
         <ObjectProperty IRI="#hasTestingActivity"/>
         <NamedIndividual IRI="#Car_Testing_Process"/>
         <NamedIndividual IRI="#Engine_Testing_Activity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBound"/>
+        <NamedIndividual IRI="#Just_Outside_Test"/>
+        <NamedIndividual IRI="#Upper_Bound"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBound"/>
+        <NamedIndividual IRI="#Just_Outside_Test2"/>
+        <NamedIndividual IRI="#Lower_Bound"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBound"/>
+        <NamedIndividual IRI="#Lower_Bound_Test"/>
+        <NamedIndividual IRI="#Lower_Bound"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasBound"/>
+        <NamedIndividual IRI="#Upper_Bound_Test"/>
+        <NamedIndividual IRI="#Upper_Bound"/>
     </ObjectPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasEndDate"/>
@@ -305,7 +397,47 @@
     <DataPropertyAssertion>
         <DataProperty IRI="#hasStatus"/>
         <NamedIndividual IRI="#Fuel_Gasket_Test_Case"/>
-        <Literal>Pendidng</Literal>
+        <Literal>Pending</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInBound"/>
+        <NamedIndividual IRI="#Just_Outside_Test"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInBound"/>
+        <NamedIndividual IRI="#Just_Outside_Test2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">false</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Lower_Bound"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isBoundType"/>
+        <NamedIndividual IRI="#Lower_Bound"/>
+        <Literal>Lower Bound</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInBound"/>
+        <NamedIndividual IRI="#Lower_Bound_Test"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasValue"/>
+        <NamedIndividual IRI="#Upper_Bound"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">15.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isBoundType"/>
+        <NamedIndividual IRI="#Upper_Bound"/>
+        <Literal>Upper Bound</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#isInBound"/>
+        <NamedIndividual IRI="#Upper_Bound_Test"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#boolean">true</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#assertEqual"/>
@@ -324,6 +456,10 @@
         <ObjectProperty IRI="#asserts"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasBound"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
         <ObjectProperty IRI="#hasCode"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
@@ -335,10 +471,20 @@
         <ObjectProperty IRI="#hasTestingActivity"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
     </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#implements"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#executes"/>
         <ObjectProperty IRI="#isExecutedBy"/>
     </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#produces"/>
+    </FunctionalObjectProperty>
+    <InverseFunctionalObjectProperty>
+        <ObjectProperty IRI="#produces"/>
+    </InverseFunctionalObjectProperty>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#assertEqual"/>
         <Class IRI="#Testing_Framework"/>
@@ -367,8 +513,15 @@
         <Class IRI="#Testing_Framework"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBound"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty IRI="#hasBound"/>
+            <Class IRI="#Boundary_Testing"/>
+        </ObjectExactCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasCode"/>
-        <Class IRI="#Code"/>
+        <Class IRI="#Test_Code"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasLevelBasedTesting"/>
@@ -387,6 +540,10 @@
             <ObjectProperty IRI="#hasTestingActivity"/>
             <Class IRI="#Testing_Process"/>
         </ObjectMinCardinality>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#implements"/>
+        <Class IRI="#Test_Code"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#includes"/>
@@ -438,6 +595,13 @@
         <Class IRI="#Test_Suite"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBound"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasBound"/>
+            <Class IRI="#Bound"/>
+        </ObjectSomeValuesFrom>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCode"/>
         <Class IRI="#Test_Coding"/>
     </ObjectPropertyRange>
@@ -461,6 +625,10 @@
             <ObjectProperty IRI="#hasTestingActivity"/>
             <Class IRI="#Testing_Activity"/>
         </ObjectMinCardinality>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#implements"/>
+        <Class IRI="#Test_Case"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#includes"/>
@@ -507,6 +675,18 @@
         <DataProperty IRI="#hasStatus"/>
         <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasValue"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isBoundType"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isInBound"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
     <DataPropertyDomain>
         <DataProperty IRI="#hasCoverage"/>
         <Class IRI="#Test_Case"/>
@@ -539,6 +719,18 @@
         <DataProperty IRI="#hasStatus"/>
         <Class IRI="#Test_Case"/>
     </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Bound"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isBoundType"/>
+        <Class IRI="#Bound"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isInBound"/>
+        <Class IRI="#Boundary_Testing"/>
+    </DataPropertyDomain>
     <DataPropertyRange>
         <DataProperty IRI="#hasCoverage"/>
         <Datatype abbreviatedIRI="xsd:string"/>
@@ -570,6 +762,14 @@
     <DataPropertyRange>
         <DataProperty IRI="#hasStatus"/>
         <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isInBound"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
     </DataPropertyRange>
 </Ontology>
 
